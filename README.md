@@ -37,6 +37,12 @@ Com base nos dados obtidos, selecione uma prática ou dado de teste relevante e 
 
 ## Respostas
 
-**1. Repositório selecionado:** `<URL_DO_REPOSITÓRIO_AQUI>`
+**1. Repositório selecionado:** `https://github.com/keras-team/keras`
 
-**2. Explicação:** `<SUA_EXPLICAÇÃO_AQUI>`
+**2. Explicação:** 
+
+Ao analisar os testes do repositório Keras, percebi que, dos 292 testes identificados, 17 deles são testes de integração:
+
+![Local dos testes](./docs/test_location.png)
+
+No contexto de testes de software, testes de integração têm como função principal verificar se diferentes partes do sistema funcionam corretamente em conjunto. Um exemplo no Keras é o teste `integration_tests/pytorch_export_test.py`, pois ele combina componentes do próprio Keras com o backend `torch` para validar a inferência e a exportação do modelo em diferentes formatos.
